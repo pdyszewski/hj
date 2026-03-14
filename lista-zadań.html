@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Lista zadań | Hipoteza jakobianowa</title>
+<meta name="author" content="Piotr Dyszewski">
+<meta name="description" content="Niech \(A \in \mathbb{K} [X_1, \ldots, X_{i-1}, X_{i+1}, \ldots X_n]\). Odwzorowanie wielomianowe \[\begin{equation*} E = (X_1, \ldots, X_{i-1}, X_i - A, X_{i+1}, \ldots, X_n). \end{equation*}\]...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="Lista zadań | Hipoteza jakobianowa">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Niech \(A \in \mathbb{K} [X_1, \ldots, X_{i-1}, X_{i+1}, \ldots X_n]\). Odwzorowanie wielomianowe \[\begin{equation*} E = (X_1, \ldots, X_{i-1}, X_i - A, X_{i+1}, \ldots, X_n). \end{equation*}\]...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lista zadań | Hipoteza jakobianowa">
+<meta name="twitter:description" content="Niech \(A \in \mathbb{K} [X_1, \ldots, X_{i-1}, X_{i+1}, \ldots X_n]\). Odwzorowanie wielomianowe \[\begin{equation*} E = (X_1, \ldots, X_{i-1}, X_i - A, X_{i+1}, \ldots, X_n). \end{equation*}\]...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script><script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
+    	</script><script>quizdown.init();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="java.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Notatki do wykładu">Hipoteza jakobianowa</a>:
+        <small class="text-muted">Notatki do wykładu</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"></a></li>
+<li class="book-part">Notatki</li>
+<li><a class="" href="automorfizmy-wielomianowe.html"><span class="header-section-number">1</span> Automorfizmy wielomianowe</a></li>
+<li><a class="" href="warunek-kellera.html"><span class="header-section-number">2</span> Warunek Kellera</a></li>
+<li><a class="" href="aspekt-kombinatoryczny.html"><span class="header-section-number">3</span> Aspekt kombinatoryczny</a></li>
+<li class="book-part">Listy zadań</li>
+<li><a class="active" href="lista-zada%C5%84.html">Lista zadań</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="lista-zadań" class="section level1 unnumbered">
+<h1>Lista zadań<a class="anchor" aria-label="anchor" href="#lista-zada%C5%84"><i class="fas fa-link"></i></a>
+</h1>
+<ol style="list-style-type: decimal">
+<li><p>Niech <span class="math inline">\(A \in \mathbb{K} [X_1, \ldots, X_{i-1}, X_{i+1}, \ldots X_n]\)</span>.
+Odwzorowanie wielomianowe
+<span class="math display">\[\begin{equation*}
+E = (X_1, \ldots, X_{i-1}, X_i - A, X_{i+1}, \ldots, X_n).
+\end{equation*}\]</span>
+Pokaż, że <span class="math inline">\(E\circ E'=X\)</span>, gdzie
+<span class="math display">\[\begin{equation*}
+E' = (X_1, \ldots, X_{i-1}, X_i + A, X_{i+1}, \ldots, X_n).
+\end{equation*}\]</span></p></li>
+<li><p>Rozważmy <span class="math inline">\(\mathbb{K}=\mathbb{Z}_3\)</span>, <span class="math inline">\(n=1\)</span>. Niech <span class="math inline">\(F = X_1+X_1^3\)</span>. Pokaż, że
+<span class="math inline">\(F \colon \mathbb{K} \to \mathbb{K}\)</span> jest różnowartościowe, ale <span class="math inline">\(F\)</span> nie jest odwracalne
+(wielomianowo).</p></li>
+<li><p>Niech <span class="math inline">\(F \in \mathbb{K}[X]^n\)</span> będzie odwzorowaniem wielomoanowym. Rozważmy
+<span class="math inline">\(F^* \colon \mathbb{K}[X] \to \mathbb{K}[X]\)</span> zadane przez
+<span class="math display">\[\begin{equation*}
+F^*(G) = G \circ F.
+\end{equation*}\]</span>
+Pokaż, że <span class="math inline">\(F^*\)</span> jest automorfizmem <span class="math inline">\(\mathbb{K}[X]\)</span> wtedy i tylko wtedy, gdy <span class="math inline">\(F\)</span> jest
+odwracalne wielomianowo.</p></li>
+<li>
+<p>Załóżmy, że <span class="math inline">\(F = X-H\)</span> przy czym <span class="math inline">\(H\)</span> jest jednorodny stopnia <span class="math inline">\(d\)</span> oraz <span class="math inline">\(\det(JF)=1\)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Pokaż, że wielomian charakterystyczny macierzy <span class="math inline">\(JH\)</span> jest równy <span class="math inline">\((-1)^n t^n\)</span>.</li>
+<li>Wywnioskuj, że <span class="math inline">\(JH\)</span> jest nilpotentna</li>
+</ol>
+</li>
+</ol>
+<div class="definition">
+<p><span id="def:unlabeled-div-23" class="definition"><strong>Definicja 4.1  </strong></span>Dla <span class="math inline">\(T\in C_p\)</span> z wyróżnionym liściem <span class="math inline">\(v\in V_{\mathrm{ext}}(T)\)</span> definiujemy
+<span class="math display">\[\begin{equation*}
+    \omega_{ji}(T,v)  
+    = \sum_{\substack{c \: : \: (c,T) \in \mathcal{C}^{(j)}  \\ c(root) =j, \: c(v)=i } }
+    \prod_{u\in V_{\mathrm{int}}(T)}
+    \frac{h_{\kappa(u)}^{(c(u))}}{d!}
+    \prod_{u\in V_{\mathrm{ext}}(T) \setminus \{ v \}} X_{c(u)}
+\end{equation*}\]</span></p>
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Pokaż, że
+<span class="math display">\[\begin{equation*}
+\frac{\partial \omega_j(T) }{ \partial X_i} = \sum_{v \in V_{ext}(T)} \omega_{ji}(T,v)
+\end{equation*}\]</span></p></li>
+<li><p>Załóżmy, że istnieje izomorfizm grafowy między <span class="math inline">\(T_1, T_2 \in C_p\)</span> taki, który przekształca liść
+<span class="math inline">\(v_1\in V_{\mathrm{ext}}(T_1)\)</span> na <span class="math inline">\(v_2\in V_{\mathrm{ext}}(T_2)\)</span>. Pokaż, że
+<span class="math inline">\(\omega_{ji}(T_1,v_1) = \omega_{ji}(T_2,v_2)\)</span> dla dowolnych <span class="math inline">\(i\)</span> oraz <span class="math inline">\(j\)</span>.</p></li>
+<li><p>Niech <span class="math inline">\(T\)</span> będzie drzewem Catalana o wysokości jeden.
+Pokaż, że <span class="math inline">\(\frac{\partial H_j}{\partial X_i} = d \cdot \omega_{ji}(T,v)\)</span> dla dowolnego liścia <span class="math inline">\(v \in V_{\mathrm{ext}}(T)\)</span>.</p></li>
+</ol>
+<div class="definition">
+<p><span id="def:unlabeled-div-24" class="definition"><strong>Definicja 4.2  </strong></span>Na zbiorze drzew z wyróżnionym liściem wprowadzamy działanie,
+poprzez utożsamienie korzenia jednego drzewa z wyróżnionym liściem w drugim drzewie. Dla przykładu
+jeżeli <span class="math inline">\((S,u)\)</span> jest drzewem</p>
+<div class="inline-figure"><img src="TIKZ/drzewo9.svg" style="display: block; margin: auto;"></div>
+<p>a <span class="math inline">\((T,v)\)</span> jest drzewem</p>
+<div class="inline-figure"><img src="TIKZ/drzewo10.svg" style="display: block; margin: auto;"></div>
+<p>to drzewo <span class="math inline">\((S,u)*(T,v)\)</span> jest drzewem</p>
+<div class="inline-figure"><img src="TIKZ/drzewo11.svg" style="display: block; margin: auto;"></div>
+</div>
+<ol start="8" style="list-style-type: decimal">
+<li>Uzasadnij, że dla dowolnych drzew z wyróżnionymi liśćmi <span class="math inline">\((S,u)\)</span> i <span class="math inline">\((T,v)\)</span> zachodzi
+<span class="math display">\[\begin{equation*}
+\omega_{ji}\big( (S,u)*(T,v) \big)
+= \sum_{k=1}^n \omega_{jk}(S,u)\,\omega_{ki}(T,v).
+\end{equation*}\]</span>
+</li>
+</ol>
+<div class="definition">
+<p><span id="def:unlabeled-div-25" class="definition"><strong>Definicja 4.3  </strong></span>Paprocią rzędu <span class="math inline">\(k\)</span> nazywamy drzewo Catalana wysokości <span class="math inline">\(k\)</span> o <span class="math inline">\(k\)</span> wewnętrznych wierzchołkach.
+Dla przykładu graf</p>
+<div class="inline-figure"><img src="TIKZ/drzewo12.svg" style="display: block; margin: auto;"></div>
+<p>jest paprocią rzędu <span class="math inline">\(3\)</span>.</p>
+</div>
+<ol start="9" style="list-style-type: decimal">
+<li><p>Rozważmy paproć rzędu <span class="math inline">\(k\)</span> <span class="math inline">\(U\)</span> z liściem <span class="math inline">\(u\)</span> w odległości <span class="math inline">\(k\)</span> od korzenia. Pokaz, że <span class="math inline">\((JH)^k = d^k\cdot \omega(U,u)\)</span>.</p></li>
+<li><p>Uzasadnij <em>Shuffle lemma</em> Dla każdego <span class="math inline">\(T\)</span> i każdego <span class="math inline">\(v \in V(T)\)</span> w odległości <span class="math inline">\(\geq n\)</span> od korzenia
+<span class="math display">\[
+  \sum_{T'\in Sh(T,v)} \omega_j(T') = 0.
+\]</span></p></li>
+<li><p>Pokaż, że Hipoteza o tasowaniu poddrzew implikuje hipotezę o jakobianie. Rozważ przestrzeń
+<span class="math inline">\(\ell^2(C_p)\)</span> i zinterpretuj <em>Shuffle lemma</em>.</p></li>
+<li><p>Niech <span class="math inline">\(e_1, \ldots e_n\)</span> będzie bazą przestrzeni liniowej <span class="math inline">\(W\)</span>.
+Niech <span class="math inline">\(\mathcal{A}\)</span> będzie zbiorem podzbiorów <span class="math inline">\(\{1, 2, \ldots n\}\)</span> takim, że
+dla każdego <span class="math inline">\(k \leq n\)</span> istnieje <span class="math inline">\(A \in \mathcal{A}\)</span> takie, że <span class="math inline">\(\inf A =k\)</span>. Pokaż, że
+<span class="math display">\[\begin{equation*}
+\mathrm{lin}\left\{ \sum_{k \in A} e_k \: : \: A \in \mathcal{A}\right\}=W.
+\end{equation*}\]</span></p></li>
+</ol>
+<div class="definition">
+<p><span id="def:unlabeled-div-26" class="definition"><strong>Definicja 4.4  </strong></span>Definiujemy porządek na <span class="math inline">\(C\)</span> w następujący sposób:
+a. <span class="math inline">\(S &lt; T\)</span>, gdy <span class="math inline">\(S\)</span> ma mniej liści niż <span class="math inline">\(T\)</span>.
+b. definiujemy relację <span class="math inline">\(&lt;\)</span> rekurencyjnie w następujący sposób:
+jeśli <span class="math inline">\(S\)</span> i <span class="math inline">\(T\)</span> mają tę samą liczbę wierzchołków, oraz
+<span class="math display">\[
+S =
+\begin{array}{c}
+S_1 S_2 \ldots S_j \\
+\circ
+\end{array}
+\]</span></p>
+<p>oraz</p>
+<p><span class="math display">\[
+T =
+\begin{array}{c}
+T_1 T_2 \ldots T_k \\
+\circ
+\end{array}
+\]</span>
+to <span class="math inline">\(S &lt; T\)</span> wtedy i tylko wtedy, gdy słowo <span class="math inline">\(S_1 S_2 \ldots S_j\)</span>
+jest mniejsze od słowa <span class="math inline">\(T_1 T_2 \ldots T_k\)</span> w porządku leksykograficznym.</p>
+</div>
+<ol start="13" style="list-style-type: decimal">
+<li><p>Niech <span class="math inline">\(d=2\)</span>. Uporządkuj <span class="math inline">\(C_4\)</span>.</p></li>
+<li><p>Niech <span class="math inline">\(d=2\)</span>. Pokaż, że każde drzewo z <span class="math inline">\(C_p\)</span> jest elementem minimalnym pewnej shuffle class z <span class="math inline">\(n=2\)</span>.</p></li>
+<li><p>Pokaż, że Hipoteza o tasowaniu poddrzew jest prawdziwa dla <span class="math inline">\(n=d=2\)</span>.</p></li>
+</ol>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="aspekt-kombinatoryczny.html"><span class="header-section-number">3</span> Aspekt kombinatoryczny</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#lista-zada%C5%84">Lista zadań</a></li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Hipoteza jakobianowa</strong>: Notatki do wykładu" was written by Piotr Dyszewski. It was last built on 2026-03-14.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

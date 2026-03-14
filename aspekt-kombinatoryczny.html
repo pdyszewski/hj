@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>3 Aspekt kombinatoryczny | Hipoteza jakobianowa</title>
+<meta name="author" content="Piotr Dyszewski">
+<meta name="description" content="Definicja 3.1 Dla \(p\in\mathbb{N}\) niech \(C_p\) oznacza zbiór wszystkich ukorzenionych, planarnych, pełnych drzew \(d\)-arnych o \(p\) liściach (każdy wewnętrzny wierzchołek ma dokładnie \(d\)...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="3 Aspekt kombinatoryczny | Hipoteza jakobianowa">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Definicja 3.1 Dla \(p\in\mathbb{N}\) niech \(C_p\) oznacza zbiór wszystkich ukorzenionych, planarnych, pełnych drzew \(d\)-arnych o \(p\) liściach (każdy wewnętrzny wierzchołek ma dokładnie \(d\)...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="3 Aspekt kombinatoryczny | Hipoteza jakobianowa">
+<meta name="twitter:description" content="Definicja 3.1 Dla \(p\in\mathbb{N}\) niech \(C_p\) oznacza zbiór wszystkich ukorzenionych, planarnych, pełnych drzew \(d\)-arnych o \(p\) liściach (każdy wewnętrzny wierzchołek ma dokładnie \(d\)...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script><script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
+    	</script><script>quizdown.init();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="java.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Notatki do wykładu">Hipoteza jakobianowa</a>:
+        <small class="text-muted">Notatki do wykładu</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"></a></li>
+<li class="book-part">Notatki</li>
+<li><a class="" href="automorfizmy-wielomianowe.html"><span class="header-section-number">1</span> Automorfizmy wielomianowe</a></li>
+<li><a class="" href="warunek-kellera.html"><span class="header-section-number">2</span> Warunek Kellera</a></li>
+<li><a class="active" href="aspekt-kombinatoryczny.html"><span class="header-section-number">3</span> Aspekt kombinatoryczny</a></li>
+<li class="book-part">Listy zadań</li>
+<li><a class="" href="lista-zada%C5%84.html">Lista zadań</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="aspekt-kombinatoryczny" class="section level1" number="3">
+<h1>
+<span class="header-section-number">3</span> Aspekt kombinatoryczny<a class="anchor" aria-label="anchor" href="#aspekt-kombinatoryczny"><i class="fas fa-link"></i></a>
+</h1>
+<div class="definition">
+<p><span id="def:unlabeled-div-9" class="definition"><strong>Definicja 3.1  </strong></span>Dla <span class="math inline">\(p\in\mathbb{N}\)</span> niech <span class="math inline">\(C_p\)</span> oznacza zbiór wszystkich ukorzenionych, planarnych,
+pełnych drzew <span class="math inline">\(d\)</span>-arnych o <span class="math inline">\(p\)</span> liściach (każdy wewnętrzny wierzchołek ma dokładnie <span class="math inline">\(d\)</span> dzieci).</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-10" class="example"><strong>Przykład 3.1  </strong></span>Niech <span class="math inline">\(d=3\)</span>. Wówczas <span class="math inline">\(C_1\)</span> składa się z jednego drzewa</p>
+<div class="inline-figure"><img src="TIKZ/drzewo1.svg" style="display: block; margin: auto;"></div>
+<p><span class="math inline">\(C_2 = \emptyset\)</span>. Natomiast <span class="math inline">\(C_3\)</span> ma jeden element</p>
+<div class="inline-figure"><img src="TIKZ/drzewo3.svg" style="display: block; margin: auto;"></div>
+<p><span class="math inline">\(C_4=\emptyset\)</span> a <span class="math inline">\(C_5\)</span> składa się z trzech drzew</p>
+<div class="inline-figure"><img src="TIKZ/drzewo5.svg" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="TIKZ/drzewo5a.svg" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="TIKZ/drzewo5b.svg" style="display: block; margin: auto;"></div>
+</div>
+<p>Dla drzewa <span class="math inline">\(T\)</span> będziemy rozważać kolorowanie jego wierzchołków
+<span class="math inline">\(c \colon V(T) \to \{1,2, \ldots ,n\}\)</span> przy pomocy <span class="math inline">\(n\)</span> kolorów.
+Tutaj <span class="math inline">\(V(T)\)</span> oznacza zbiór wierzchołków drzewa <span class="math inline">\(T\)</span>. Parę
+<span class="math display">\[
+\mathcal{T}=(c,T),\qquad c:V(T)\to [n]
+\]</span>
+Nazywać będziemy pokolorowanym drzewem Catalana.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-11" class="definition"><strong>Definicja 3.2  </strong></span>Zbiór wszystkich drzew Catalana o <span class="math inline">\(p\)</span> liściach pokolorowanych w taki sposób, że korzeń
+ma kolor <span class="math inline">\(j\)</span> oznaczać będziemy przez
+<span class="math display">\[
+\mathcal{C}^{(j)}_p
+=
+\{\, \mathcal{T}=(c,T) : T \in C_p,\; c(\mathrm{root}(T))=j \,\}.
+\]</span></p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-12" class="example"><strong>Przykład 3.2  </strong></span>Poniższe drzewo jest elementem <span class="math inline">\(\mathcal{C}^{(1)}_7\)</span>
+<img src="TIKZ/drzewo6.svg" style="display: block; margin: auto;"></p>
+</div>
+<p>Wykorzystamy drzewa Catalana aby znaleść reprezentację odwrotnej of <span class="math inline">\(F\)</span>. W tym celu przyjmiemy jeszcze jedno oznaczenie</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-13" class="definition"><strong>Definicja 3.3  </strong></span>Dla pokolorowanego drzewa Catalana <span class="math inline">\(\mathcal{T} = (c,T)\)</span> kładziemy
+<span class="math display">\[
+\omega(\mathcal{T}) \;=\;
+  \prod_{v\in V_{\mathrm{int}}(T)}
+\frac{h_{\kappa(v)}^{(c(v))}}{d!}\,
+\prod_{v\in V_{\mathrm{ext}}(T)} X_{c(v)} \in \mathbb{C}[X_1, \ldots, X_n],
+\]</span>
+gdzie
+<span class="math inline">\(\kappa(v) = (\kappa(v)_j)_{j \leq n}\)</span>, <span class="math inline">\(\kappa(v)_j\)</span> liczba dzieci <span class="math inline">\(v\)</span> koloru <span class="math inline">\(j\)</span></p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-14" class="example"><strong>Przykład 3.3  </strong></span>Niech <span class="math inline">\(\mathcal{T}\in \mathcal{C}_7^{(1)}\)</span> będzie dane przez</p>
+<div class="inline-figure"><img src="TIKZ/drzewo7.svg" style="display: block; margin: auto;"></div>
+<p>Wówczas
+<span class="math display">\[\begin{equation*}
+    \omega(\mathcal{T})=\frac{h^{(1)}_{111}}{3!}\frac{h^{(1)}_{030}}{3!} \frac{h^{(2)}_{003}}{3!} \frac{h^{(2)}_{012}}{3!} X_2^3 X_3^6
+\end{equation*}\]</span></p>
+</div>
+<p>Oznaczmy zbiór wszystkich pokolorowanych drzew Catalana z korzeniem koloru <span class="math inline">\(j\)</span> przez</p>
+<p><span class="math display">\[
+  \mathcal{C}^{(j)} = \bigcup_{p\geq 1} \mathcal{C}^{(j)}_p.
+\]</span>
+Dla <span class="math inline">\(i\leq n\)</span> definiujemy szereg formalny <span class="math inline">\(G_i \in \mathcal{C}[[X]]\)</span> poprzez
+<span class="math display">\[
+G_j \;=\; \sum_{\mathcal{T}\in \mathcal{C}^{(j)}} \omega(\mathcal{T}) \in \mathbb{C}[[X_1, \ldots, X_n]].
+\]</span>
+Niech
+<span class="math display">\[
+G=(G_1,\dots,G_n) \in \mathbb{C}[[X_1,\dots,X_n]]^n
+\]</span></p>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-15" class="lemma"><strong>Lemma 3.1  </strong></span><span class="math inline">\(F\circ G = X\)</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-16" class="proof"><em>Proof</em>. </span>Zauważmy, że
+<span class="math display">\[
+\mathcal{C}^{(j)}
+=
+\{\, \bullet_j \,\}
+\cup
+\bigcup_{\beta\in[n]^d}
+\{\, \mathcal{T}(j;\mathcal{T}_1,\dots,\mathcal{T}_d)
+: \mathcal{T}_k\in\mathcal{C}^{(\beta_k)} \,\},
+\]</span></p>
+<p>gdzie <span class="math inline">\(\mathcal{T}(j; \mathcal{T}_1, \ldots ,\mathcal{T}_d\)</span> to drzewo postaci</p>
+<div class="inline-figure"><img src="TIKZ/drzewo8.svg" style="display: block; margin: auto;"></div>
+<p>Przypomnijmy, że</p>
+<p><span class="math display">\[
+H_j = \sum_{|\alpha|=d} \frac{h^{(j)}_\alpha}{\alpha!} X^\alpha,
+\qquad
+F_j = X_j - H_j.
+\]</span>
+Mamy
+<span class="math display">\[
+\begin{aligned}
+G_j
+&amp;= \sum_{\mathcal{T} \in \mathcal{C}^{(j)}} \omega(\mathcal{T})
+\\
+&amp;= \omega(\bullet_j)
++ \sum_{\substack{\beta \in [n]^d \\
+\mathcal{T}_1 \in \mathcal{C}^{(\beta_1)},\ldots,
+\mathcal{T}_d \in \mathcal{C}^{(\beta_d)}
+}}
+\omega\!\left(\mathcal{T}(j;\mathcal{T}_1,\ldots,\mathcal{T}_d)
+\right)
+\\
+&amp;= X_j +
+\sum_{\substack{\beta \in [n]^d \\
+\mathcal{T}_1 \in \mathcal{C}^{(\beta_1)},\ldots,
+\mathcal{T}_d \in \mathcal{C}^{(\beta_d)}
+}}
+\frac{h^{(j)}_{\kappa(\mathrm{root})}}{d!}
+\omega(\mathcal{T}_1)\cdots\omega(\mathcal{T}_d)
+\\
+&amp;=
+X_j +
+\sum_{\beta\in[n]^d}
+\frac{h^{(j)}_{\kappa(\mathrm{root})}}{d!}
+G_{\beta_1}\cdots G_{\beta_d}
+\\
+&amp;=
+X_j +
+\sum_{|\alpha|=d}
+\frac{h^{(j)}_{\alpha}}{\alpha!}
+G_1^{\alpha_1}\cdots G_n^{\alpha_n}
+=
+X_j + H_j \circ G .
+\end{aligned}
+\]</span></p>
+</div>
+<div id="drzewa-bez-kolorów" class="section level2" number="3.1">
+<h2>
+<span class="header-section-number">3.1</span> Drzewa bez kolorów<a class="anchor" aria-label="anchor" href="#drzewa-bez-kolor%C3%B3w"><i class="fas fa-link"></i></a>
+</h2>
+<p>Chcemy zinterpretować nilpotentność <span class="math inline">\(JH\)</span> w terminach drzew Catalana. W tym celu łatwiej będzie nam operować na wagach drzew bez kolorowania.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-17" class="definition"><strong>Definicja 3.4  </strong></span>Dla drzewa Catalana <span class="math inline">\(T \in C = \bigcup_p C_p\)</span> kładziemy</p>
+<p><span class="math display">\[
+\omega_j(T) = \sum_{c : (c,T) \in \mathcal{C}^{(j)}} \omega(c,T)
+\]</span></p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-18" class="example"><strong>Przykład 3.4  </strong></span>Rozważmy <span class="math inline">\(d=3\)</span>. Niech<span class="math inline">\(U\)</span> będzie drzewem</p>
+<div class="inline-figure"><img src="TIKZ/drzewo3.svg" style="display: block; margin: auto;"></div>
+<p><span class="math display">\[\begin{align*}
+\omega_j(U)
+&amp;=
+\sum_{\beta \in [n]^d}
+\frac{h^{(j)}_{\kappa(\mathrm{root})}}{d!} X_{\beta_1}X_{\beta_2}\cdots X_{\beta_d} \\
+&amp;=
+\sum_{|\alpha|=d}\frac{h^{(j)}_\alpha}{\alpha!}X_1^{\alpha_1}\cdots X_n^{\alpha_n}
+= H_j.
+\end{align*}\]</span>
+Potrafimy zatem znaleść reprezentację <span class="math inline">\(H_j\)</span> w terminach drzew Catalana</p>
+</div>
+<p>Naszym celem jest pokazanie, że <span class="math inline">\(G\)</span> jest w rzeczywistości odwzorowaniem wielomianowym.
+Mamy
+<span class="math display">\[
+G_j = \sum_p \sum_{T \in C_p} \omega_j(T) \in \mathbb{C}[X_1,\ldots,X_n]
+\]</span></p>
+<p>wtedy i tylko wtedy, gdy</p>
+<p><span class="math display">\[
+\sum_{T \in C_p}\omega_j(T)=0
+\qquad
+\text{dla dostatecznie dużych } p.
+\]</span></p>
+</div>
+<div id="shuffle-classes" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Shuffle classes<a class="anchor" aria-label="anchor" href="#shuffle-classes"><i class="fas fa-link"></i></a>
+</h2>
+<p>Warunek <span class="math inline">\(JH^n=0\)</span> zinterpretujemy dokładniej w cześci zadaniowej. Skupimy się teraz na ostatnim składniku całego podejścia, czyli na operacji tasowania poddrzew.</p>
+<p>Niech <span class="math inline">\(T\in C\)</span> i <span class="math inline">\(v\in V(T)\)</span> będzie wierzchołkiem w odległości co najmniej <span class="math inline">\(n\)</span> od korzenia.
+Rozważmy ścieżkę przodków
+<span class="math display">\[
+v=v_n,v_{n-1},\ldots,v_0.
+\]</span>
+Każdy z wierzchołków <span class="math inline">\(v_j\)</span> dla <span class="math inline">\(j\leq n-1\)</span> poza <span class="math inline">\(v_{j+1}\)</span> ma <span class="math inline">\(d-1\)</span> potomostwa. Daje nam to <span class="math inline">\(n(d-1)\)</span> poddrzew
+<span class="math inline">\(T_1, T_2, \ldots T_{n(d-1}\)</span> w <span class="math inline">\(T\)</span>.
+Wówczas <span class="math inline">\(T\)</span> można przedstawić następująco</p>
+<div class="inline-figure"><img src="TIKZ/drzewos1.svg" style="display: block; margin: auto;"></div>
+<p>Rozważmy teraz permutację <span class="math inline">\(\sigma \in S_{n(d-1)}\)</span>. Przez <span class="math inline">\(T_\sigma^v\)</span> oznaczmy drzewo Catalana powstałe z
+permutacji podrzew <span class="math inline">\(T_1, \ldots T_{n(d-1)}\)</span> zgodnie z <span class="math inline">\(\sigma\)</span>. Wówczas <span class="math inline">\(T_\sigma^v\)</span> reprezentuje się następująco</p>
+<div class="inline-figure"><img src="TIKZ/drzewos2.svg" style="display: block; margin: auto;"></div>
+<div class="definition">
+<p><span id="def:unlabeled-div-19" class="definition"><strong>Definicja 3.5  </strong></span>Dla ustalonego <span class="math inline">\(T\)</span> i ustalonego <span class="math inline">\(v\)</span>, <em>Shuffle class</em> <span class="math inline">\(Sh(T,v)\)</span> składa się ze
+wszystkich drzew <span class="math inline">\(T_\sigma^v\)</span>, które można uzyskać w ten sposób
+<span class="math display">\[\begin{equation*}
+    Sh(T,v) = \left\{ T_\sigma^v \: : \: \sigma \in S_{n(d-1)} \right\}.
+\end{equation*}\]</span></p>
+</div>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-20" class="lemma"><strong>Lemma 3.2  (Shuffle lemma) </strong></span>Dla każdego <span class="math inline">\(T\)</span> i każdego <span class="math inline">\(v\in V(T)\)</span> w odległości co najmniej <span class="math inline">\(n\)</span> od korzenia zachodzi
+<span class="math display">\[
+\sum_{T'\in Sh(T,v)} \omega_j(T') = 0.
+\]</span></p>
+</div>
+<p>Dla pewnej <em>Shuffle class</em> (dla pewnego drzewa <span class="math inline">\(T\)</span> i wierzchołka <span class="math inline">\(v\)</span> definiujemy jego funkcję indykatorową</p>
+<p><span class="math display">\[
+\mathbf{1}_{\mathcal{S}}(T)=
+\begin{cases}
+1,&amp; T\in \mathcal{S},\\
+0,&amp; T\notin \mathcal{S}.
+\end{cases}
+\]</span></p>
+<div class="hypothesis">
+<p><span id="hyp:unlabeled-div-21" class="hypothesis"><strong>Hypothesis 3.1  (Hipoteza o tasowaniu) </strong></span>Dla dostatecznie dużych <span class="math inline">\(p\)</span> funkcja stała na <span class="math inline">\(C_p\)</span> leży w
+<span class="math display">\[
+\operatorname{span}\Big\{
+\mathbf{1}_{\mathcal{S}}
+:\;
+\mathcal{S}\text{ jest shuffle class w } C_p
+\Big\}.
+\]</span></p>
+</div>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-22" class="theorem"><strong>Twierdzenie 3.1  </strong></span>Hipoteza o tasowaniu implikuję hipotezę jakobianową.</p>
+</div>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="warunek-kellera.html"><span class="header-section-number">2</span> Warunek Kellera</a></div>
+<div class="next"><a href="lista-zada%C5%84.html">Lista zadań</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#aspekt-kombinatoryczny"><span class="header-section-number">3</span> Aspekt kombinatoryczny</a></li>
+<li><a class="nav-link" href="#drzewa-bez-kolor%C3%B3w"><span class="header-section-number">3.1</span> Drzewa bez kolorów</a></li>
+<li><a class="nav-link" href="#shuffle-classes"><span class="header-section-number">3.2</span> Shuffle classes</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Hipoteza jakobianowa</strong>: Notatki do wykładu" was written by Piotr Dyszewski. It was last built on 2026-03-14.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

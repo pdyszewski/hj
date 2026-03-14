@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>2 Warunek Kellera | Hipoteza jakobianowa</title>
+<meta name="author" content="Piotr Dyszewski">
+<meta name="description" content="Chcąc lepiej zrozumieć \(\mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\) sprubujemy poszukać bezpośredniego testu na \(F \in \mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\). Przypomnijmy, że w \(\mathbb{K}[X]\)...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="2 Warunek Kellera | Hipoteza jakobianowa">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Chcąc lepiej zrozumieć \(\mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\) sprubujemy poszukać bezpośredniego testu na \(F \in \mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\). Przypomnijmy, że w \(\mathbb{K}[X]\)...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2 Warunek Kellera | Hipoteza jakobianowa">
+<meta name="twitter:description" content="Chcąc lepiej zrozumieć \(\mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\) sprubujemy poszukać bezpośredniego testu na \(F \in \mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\). Przypomnijmy, że w \(\mathbb{K}[X]\)...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script><script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
+    	</script><script>quizdown.init();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="java.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Notatki do wykładu">Hipoteza jakobianowa</a>:
+        <small class="text-muted">Notatki do wykładu</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"></a></li>
+<li class="book-part">Notatki</li>
+<li><a class="" href="automorfizmy-wielomianowe.html"><span class="header-section-number">1</span> Automorfizmy wielomianowe</a></li>
+<li><a class="active" href="warunek-kellera.html"><span class="header-section-number">2</span> Warunek Kellera</a></li>
+<li><a class="" href="aspekt-kombinatoryczny.html"><span class="header-section-number">3</span> Aspekt kombinatoryczny</a></li>
+<li class="book-part">Listy zadań</li>
+<li><a class="" href="lista-zada%C5%84.html">Lista zadań</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="warunek-kellera" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> Warunek Kellera<a class="anchor" aria-label="anchor" href="#warunek-kellera"><i class="fas fa-link"></i></a>
+</h1>
+<p>Chcąc lepiej zrozumieć <span class="math inline">\(\mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\)</span>
+sprubujemy poszukać bezpośredniego testu na <span class="math inline">\(F \in \mathrm{Aut}_\mathbb{K}(\mathbb{K}[X])\)</span>.
+Przypomnijmy, że w <span class="math inline">\(\mathbb{K}[X]\)</span> mamy operację różniczkowania, która jest zadana na
+generatorach poprzez
+<span class="math display">\[\begin{equation*}
+    \frac{\partial }{\partial X_i} \left(X_1^{\alpha_1} X_2^{\alpha_2} \cdots X_n^{\alpha_n} \right) =
+    \alpha_j X_1^{\alpha_1}\cdots X_j^{\alpha_j-1} \cdots X_n^{\alpha_n}.
+\end{equation*}\]</span>
+Z każdym odwzorowaniem wielomianowym możemy stowarzyszyć
+jego macierz Jacobiego
+<span class="math display">\[\begin{equation*}
+    JF = \left( \frac{\partial }{\partial X_i} F_j\right)_{i,j}.
+\end{equation*}\]</span>
+Pokdreślmy fakt, że <span class="math inline">\(JF\)</span> jest macierzą o wyrazach z <span class="math inline">\(\mathbb{K}[X]\)</span>. Jeżeli <span class="math inline">\(F\)</span> jest automorfizmem, z odwrotną <span class="math inline">\(G\)</span>, to
+<span class="math display">\[\begin{equation*}
+    G\circ F = X.
+\end{equation*}\]</span>
+Różniczkowanie daje
+<span class="math display">\[\begin{equation*}
+    JG(F) \cdot JF = JX = I_{n\times n}.
+\end{equation*}\]</span>
+Rozważając wyznaczniki otrzymujemy
+<span class="math display">\[
+\det(J G(F)))\,\det(J F)=1.
+\]</span>
+Oba powyższe wyznaczniki są wielomianami formalnymi. Oznacza to, że
+<span class="math display">\[\begin{equation*}
+    \det(JF)\in \mathbb{K}[X_1,\dots,X_n]^{*} = \mathbb{K}^*.
+\end{equation*}\]</span></p>
+<div class="conjecture">
+<p><span id="cnj:unlabeled-div-5" class="conjecture"><strong>Conjecture 2.1  (Hipoteza jakobianowa) </strong></span>Jeśli <span class="math inline">\(\det(JF)\in \mathbb{K}^{*}\)</span>, to <span class="math inline">\(F\)</span> jest automorfizmem wielomianowym.</p>
+</div>
+<p>Okazuje się, że powyższa hipoteza nie jest prawdzwa w ciałach o charakterystyce dodatniej.</p>
+<div class="exercise">
+<p><span id="exr:unlabeled-div-6" class="exercise"><strong>Zadanie 2.1  </strong></span>Niech <span class="math inline">\(\mathbb{K} = \mathbb{F}_p\)</span> dla pewnej pierwszej <span class="math inline">\(p\)</span>. Znajdź odwzorowanie wielomianowe <span class="math inline">\(F\)</span> spełniające
+<span class="math inline">\(\det(JF)=1\)</span> które nie jest pdwracalne.</p>
+</div>
+<p>Od tej pory będziemy pracować wyłącznie w ciałach o charakterystyce dodatniej. Dla ustalenia uwagi
+przyjmiemy nawet <span class="math inline">\(\mathbb{K} = \mathbb{C}\)</span>.</p>
+<p>Zauważmy,że zastępując <span class="math inline">\(F\)</span> przez <span class="math inline">\(F-F(0)\)</span> możemy bez zmniejszania ogólności założyć, że <span class="math inline">\(F(0)=0\)</span>.
+Zastępując dalej <span class="math inline">\(F\)</span> przez <span class="math inline">\((J F(0))^{-1}F\)</span>, możemy też zakładać, że <span class="math inline">\(J F(0)=Id_{n\times n}\)</span>.
+Oznacza to, że <span class="math inline">\(F=(F_1, \ldots, F_n)\)</span> jest postaci
+<span class="math display">\[\begin{equation*}
+  F_j = X_j + \text{(wyrazy stopnia}\ \ge 2),\ \ j=1,\dots,n
+\end{equation*}\]</span></p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-7" class="theorem"><strong>Twierdzenie 2.1  </strong></span>Dla rozstrzygnięcia hipotezy o jakobianie wystarczy rozważać
+<span class="math inline">\(F\in \mathbb{C}[X_1,\dots,X_n]^n\)</span>
+postaci
+<span class="math display">\[
+  F_j = X_j - H_j,\qquad j=1,\dots,n,
+\]</span>
+gdzie <span class="math inline">\(H_j\in \mathbb{C}[X_1,\dots,X_n]\)</span> są <span class="math inline">\(d\)</span>-jednorodne, <span class="math inline">\(d \in \mathbb{N}\)</span>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-8" class="proof"><em>Proof</em>. </span>Każdy <span class="math inline">\(F_j\)</span> możemy zapisać jako
+<span class="math display">\[\begin{equation*}
+F_j = X_j - M_2 -M_3 - \ldots -M_{d_j},
+\end{equation*}\]</span>
+gdzie każdy <span class="math inline">\(M_j\)</span> jest jednorodny stopnia <span class="math inline">\(j\)</span>. Ideą redukcji jest wyeliminowanie <span class="math inline">\(M_2\)</span> poprzez zmyślne podstawienie i zasotsowanie
+indukcji.</p>
+</div>
+<p>Zastanówmy się, co mówi nam jednorodność <span class="math inline">\(H\)</span> w połączeniu z warunkiem Kellera <span class="math inline">\(\det(JF)=1\)</span>.
+Mamy
+<span class="math display">\[\begin{equation*}
+\det\left(Id_{n \times n} - JH\right) = 1.
+\end{equation*}\]</span>
+Rozważając wielomian charakterystyczny <span class="math inline">\(JH\)</span> można pokazać, że <span class="math inline">\(JH\)</span> jest nilpotentna, czyli <span class="math inline">\(JH^n=0\)</span> (Zadanie).</p>
+<p>Od tej pory zakładać będziemy, że
+<span class="math display">\[\begin{equation*}
+    F = X-H,
+\end{equation*}\]</span>
+gzdie <span class="math inline">\(H\)</span> jest <span class="math inline">\(d\)</span>-jednorodne takie, że <span class="math inline">\(JH^n=0\)</span>. W ten sposób probelm jest zadany przez odwzorowanie
+wielomianowe <span class="math inline">\(H\)</span>. Zakładać będziemy, że <span class="math inline">\(H\)</span> ma reprezentację
+<span class="math display">\[\begin{equation*}
+H_j = \sum_{|\alpha|=d} \frac{h^{(j)}_\alpha}{\alpha!} X^\alpha,
+\end{equation*}\]</span>
+gdzie
+<span class="math inline">\(\alpha=(\alpha_1, \ldots, \alpha_n) \in \mathbb{N}^n\)</span> jest wielowskaźnikiem o długości
+<span class="math inline">\(|\alpha| = \alpha_1+\ldots + \alpha_n\)</span>. Stosować będziemy też skrócone zapisy
+<span class="math inline">\(\alpha! = \alpha_1!\cdots\alpha_n!\)</span> oraz
+<span class="math inline">\(X^\alpha = X_1^{\alpha_1}X_2^{\alpha_2}\cdots X_n^{\alpha_n}\)</span>.</p>
+
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="automorfizmy-wielomianowe.html"><span class="header-section-number">1</span> Automorfizmy wielomianowe</a></div>
+<div class="next"><a href="aspekt-kombinatoryczny.html"><span class="header-section-number">3</span> Aspekt kombinatoryczny</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#warunek-kellera"><span class="header-section-number">2</span> Warunek Kellera</a></li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Hipoteza jakobianowa</strong>: Notatki do wykładu" was written by Piotr Dyszewski. It was last built on 2026-03-14.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

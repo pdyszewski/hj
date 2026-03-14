@@ -1,0 +1,94 @@
+#galton-container {
+	width: 100%;
+	height: 280px;
+	//margin: 50px auto;
+	position: relative;
+	background: #2aa198;
+	border: 2px solid #333;
+	border-radius: 10px;
+	padding: 0px;
+    display: flex;
+    justify-content: center;  /* Wyśrodkowanie */
+    align-items: flex-start;  /* Usunięcie wolnego miejsca na górze */
+    overflow: hidden;
+}
+
+#galton-container-2 {
+	width: 100%;
+	height: 560px;
+	//margin: 50px auto;
+	position: relative;
+	background: #2aa198;
+	border: 2px solid #333;
+	border-radius: 10px;
+	padding: 0px;
+    display: flex;
+    justify-content: center;  /* Wyśrodkowanie */
+    align-items: flex-start;  /* Usunięcie wolnego miejsca na górze */
+    overflow: hidden;
+}
+
+.rw-container {
+	width: 100%; /* Szerokość kontenera */
+	margin: 20px auto; /* Wyśrodkowanie na stronie */
+    text-align: center; /* Wyśrodkowanie elementów wewnątrz */
+       padding: 2px; /* Odstęp wewnętrzny */
+    background-color: #002b36; /* Tło kontenera */
+  }
+
+.input-container {
+    display: flex;
+      justify-content: center;
+         gap: 10px;
+     margin-top: 10px;
+    }
+#top2random-container {
+      padding: 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+#top2rand-button-container {
+      margin-top: 10px;
+    }
+#step-counter {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    #bern-container {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    #slider-container {
+      margin-top: 10px;
+    }
+
+    input[type="range"] {
+      accent-color: #eee8d5;
+      background-color: #eee8d5;
+    }
+    #geo-container {
+  width: 100%;
+  height: 300px; /* lub jak chcesz */
+  position: relative;
+}
+
+    #kwadrat4-container {
+      width: 80%;
+      margin: 50px;
+      display: inline-block;
+      position: relative;
+    }
+#canvas_perm {
+  width: 80%;
+  margin: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+  #canvas_perm_button {
+    margin-top: 12px;
+  }
+
