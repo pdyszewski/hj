@@ -7,7 +7,7 @@
 <title>3 Aspekt kombinatoryczny | Hipoteza jakobianowa</title>
 <meta name="author" content="Piotr Dyszewski">
 <meta name="description" content="Definicja 3.1 Dla \(p\in\mathbb{N}\) niech \(C_p\) oznacza zbiór wszystkich ukorzenionych, planarnych, pełnych drzew \(d\)-arnych o \(p\) liściach (każdy wewnętrzny wierzchołek ma dokładnie \(d\)...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta name="generator" content="bookdown 0.43 with bs4_book()">
 <meta property="og:title" content="3 Aspekt kombinatoryczny | Hipoteza jakobianowa">
 <meta property="og:type" content="book">
 <meta property="og:description" content="Definicja 3.1 Dla \(p\in\mathbb{N}\) niech \(C_p\) oznacza zbiór wszystkich ukorzenionych, planarnych, pełnych drzew \(d\)-arnych o \(p\) liściach (każdy wewnętrzny wierzchołek ma dokładnie \(d\)...">
@@ -98,7 +98,7 @@ ma kolor <span class="math inline">\(j\)</span> oznaczać będziemy przez
 <p><span id="exm:unlabeled-div-12" class="example"><strong>Przykład 3.2  </strong></span>Poniższe drzewo jest elementem <span class="math inline">\(\mathcal{C}^{(1)}_7\)</span>
 <img src="TIKZ/drzewo6.svg" style="display: block; margin: auto;"></p>
 </div>
-<p>Wykorzystamy drzewa Catalana aby znaleść reprezentację odwrotnej of <span class="math inline">\(F\)</span>. W tym celu przyjmiemy jeszcze jedno oznaczenie</p>
+<p>Wykorzystamy drzewa Catalana aby znaleźć reprezentację odwrotnej of <span class="math inline">\(F\)</span>. W tym celu przyjmiemy jeszcze jedno oznaczenie</p>
 <div class="definition">
 <p><span id="def:unlabeled-div-13" class="definition"><strong>Definicja 3.3  </strong></span>Dla pokolorowanego drzewa Catalana <span class="math inline">\(\mathcal{T} = (c,T)\)</span> kładziemy
 <span class="math display">\[
@@ -213,7 +213,7 @@ X_j + H_j \circ G .
 \sum_{|\alpha|=d}\frac{h^{(j)}_\alpha}{\alpha!}X_1^{\alpha_1}\cdots X_n^{\alpha_n}
 = H_j.
 \end{align*}\]</span>
-Potrafimy zatem znaleść reprezentację <span class="math inline">\(H_j\)</span> w terminach drzew Catalana</p>
+Potrafimy zatem znaleźć reprezentację <span class="math inline">\(H_j\)</span> w terminach drzew Catalana</p>
 </div>
 <p>Naszym celem jest pokazanie, że <span class="math inline">\(G\)</span> jest w rzeczywistości odwzorowaniem wielomianowym.
 Mamy
@@ -231,18 +231,18 @@ G_j = \sum_p \sum_{T \in C_p} \omega_j(T) \in \mathbb{C}[X_1,\ldots,X_n]
 <h2>
 <span class="header-section-number">3.2</span> Shuffle classes<a class="anchor" aria-label="anchor" href="#shuffle-classes"><i class="fas fa-link"></i></a>
 </h2>
-<p>Warunek <span class="math inline">\(JH^n=0\)</span> zinterpretujemy dokładniej w cześci zadaniowej. Skupimy się teraz na ostatnim składniku całego podejścia, czyli na operacji tasowania poddrzew.</p>
+<p>Warunek <span class="math inline">\(JH^n=0\)</span> zinterpretujemy dokładniej w części zadaniowej. Skupimy się teraz na ostatnim składniku całego podejścia, czyli na operacji tasowania poddrzew.</p>
 <p>Niech <span class="math inline">\(T\in C\)</span> i <span class="math inline">\(v\in V(T)\)</span> będzie wierzchołkiem w odległości co najmniej <span class="math inline">\(n\)</span> od korzenia.
 Rozważmy ścieżkę przodków
 <span class="math display">\[
 v=v_n,v_{n-1},\ldots,v_0.
 \]</span>
-Każdy z wierzchołków <span class="math inline">\(v_j\)</span> dla <span class="math inline">\(j\leq n-1\)</span> poza <span class="math inline">\(v_{j+1}\)</span> ma <span class="math inline">\(d-1\)</span> potomostwa. Daje nam to <span class="math inline">\(n(d-1)\)</span> poddrzew
+Każdy z wierzchołków <span class="math inline">\(v_j\)</span> dla <span class="math inline">\(j\leq n-1\)</span> poza <span class="math inline">\(v_{j+1}\)</span> ma <span class="math inline">\(d-1\)</span> potomstwa. Daje nam to <span class="math inline">\(n(d-1)\)</span> poddrzew
 <span class="math inline">\(T_1, T_2, \ldots T_{n(d-1}\)</span> w <span class="math inline">\(T\)</span>.
 Wówczas <span class="math inline">\(T\)</span> można przedstawić następująco</p>
 <div class="inline-figure"><img src="TIKZ/drzewos1.svg" style="display: block; margin: auto;"></div>
 <p>Rozważmy teraz permutację <span class="math inline">\(\sigma \in S_{n(d-1)}\)</span>. Przez <span class="math inline">\(T_\sigma^v\)</span> oznaczmy drzewo Catalana powstałe z
-permutacji podrzew <span class="math inline">\(T_1, \ldots T_{n(d-1)}\)</span> zgodnie z <span class="math inline">\(\sigma\)</span>. Wówczas <span class="math inline">\(T_\sigma^v\)</span> reprezentuje się następująco</p>
+permutacji poddrzew <span class="math inline">\(T_1, \ldots T_{n(d-1)}\)</span> zgodnie z <span class="math inline">\(\sigma\)</span>. Wówczas <span class="math inline">\(T_\sigma^v\)</span> reprezentuje się następująco</p>
 <div class="inline-figure"><img src="TIKZ/drzewos2.svg" style="display: block; margin: auto;"></div>
 <div class="definition">
 <p><span id="def:unlabeled-div-19" class="definition"><strong>Definicja 3.5  </strong></span>Dla ustalonego <span class="math inline">\(T\)</span> i ustalonego <span class="math inline">\(v\)</span>, <em>Shuffle class</em> <span class="math inline">\(Sh(T,v)\)</span> składa się ze
